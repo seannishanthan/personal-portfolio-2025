@@ -30,7 +30,7 @@ ExperienceCard.PropTypes = {
 }
 
 ExperienceCard.defaultProps = {
-    image : "https://via.placeholder.com/150",
+    image : "https://placehold.co/400",
     role: "Role",
     org: "Organization",
     date: "Jan. 2024 - Apr. 2024",

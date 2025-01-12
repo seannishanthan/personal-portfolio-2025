@@ -105,7 +105,8 @@ header nav a:hover{
 
 .pfp{
     border-radius: 10%;
-    max-width: 40vh;
+    width: 40vh;
+    max-width: 300px;
     aspect-ratio: 1/1;
 }
 
@@ -138,7 +139,7 @@ header nav a:hover{
 
 .experience-section{
     border: 1px blue dashed;
-    padding: 3rem 10rem;
+    padding: 3rem 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -165,10 +166,12 @@ header nav a:hover{
     border: 1px solid skyblue;
     border-radius: 20px;
     transition: box-shadow 0.6s ease, transform 0.6s ease;
+    width:900px;
+    max-width: 100%;
     
 }
 
-.experience-section .card:hover{
+.card:hover{
     box-shadow: 3px 3px 9px rgb(187, 56, 56);
     transform: translate(5px,5px);
 }
@@ -182,8 +185,8 @@ header nav a:hover{
 }
 
 .experience-section img{
-    max-width: 100%;
-    max-height: 50vh;
+    width: 85%;
+    max-height: 60vh;
     padding: 0.3rem;
 }
 
@@ -210,6 +213,92 @@ header nav a:hover{
 .experience-section .card .description{
     padding: 1.5rem;
 } 
+
+.projects-section{
+    border: 1px blue dashed;
+    padding: 3rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+
+
+}
+
+.projects-section > h2{
+    text-align: center;
+    font-size: 2.5rem;
+    color: violet;
+}  
+
+.projects-section .cards-container{
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+
+}
+
+.projects-section .card{
+    border: 1px solid skyblue;
+    border-radius: 20px;
+    transition: box-shadow 0.6s ease, transform 0.6s ease;
+    width:900px;
+    max-width: 100%;
+    height: 320px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.projects-section .card .info{
+    padding:1rem;
+    flex: 1;
+}
+
+.projects-section .card .info h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.projects-section .card .info p{
+
+}
+
+.projects-section .card .img-container{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding: 2.5rem;
+    max-width: 50%;
+    max-height:100%;
+    overflow: hidden;
+}
+
+.projects-section .card .img{
+    max-height: 100%;
+    max-width: 100%;
+
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    font-size: 1rem;
+    padding: 1rem;
+}
+
+.footer i{
+    color: skyblue;
+
+}
+
+
+
+
 
 
 

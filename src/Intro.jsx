@@ -9,7 +9,7 @@ function Intro(){
 
                     <h2>Hi, I'm 
                         <span className="typing-text">
-                            <Typewriter options={{strings: ["Sean Nishanthan", "Software Developer", "Aspiring Engineer", "Problem Solver"], autoStart: true, loop: true,}}/>
+                            <Typewriter options={{strings: ["Sean Nishanthan", "A Software Developer", "An Aspiring Engineer", "A Problem Solver"], autoStart: true, loop: true,}}/>
                         </span>
                     </h2>
                     
