@@ -1,4 +1,5 @@
 import React from 'react'
+import Typewriter from 'typewriter-effect'
 
 function Intro(){
     return (
@@ -6,7 +7,11 @@ function Intro(){
         <section className="intro-container">
                 <div className="intro-sub-1">
 
-                    <h2>Hi, I'm <span className="typing-text">Sean Nishanthan</span></h2>
+                    <h2>Hi, I'm 
+                        <span className="typing-text">
+                            <Typewriter options={{strings: ["Sean Nishanthan", "Software Developer", "Aspiring Engineer", "Problem Solver"], autoStart: true, loop: true,}}/>
+                        </span>
+                    </h2>
                     
                     <p>Second Year Computer Engineering Student at the University of Toronto</p>
                 </div>
