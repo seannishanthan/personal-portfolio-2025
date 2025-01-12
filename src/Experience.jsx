@@ -7,7 +7,7 @@ function Experience(){
     const img2 = "utfr-img.png"
 
     return (
-        <section className="experience-section">
+        <section className="experience-section" id="experience">
             <h2>Experience</h2>
 
             <div className="cards-container">

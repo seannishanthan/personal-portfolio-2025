@@ -4,7 +4,7 @@ import Typewriter from 'typewriter-effect'
 function Intro(){
     return (
         <>
-        <section className="intro-container">
+        <section className="intro-container" id="home">
                 <div className="intro-sub-1">
 
                     <h2>Hi, I'm 

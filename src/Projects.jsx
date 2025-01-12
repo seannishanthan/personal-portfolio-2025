@@ -7,7 +7,7 @@ function Projects(){
     const img2="/appstore.png"
     return (
         <section>
-            <section className="projects-section">
+            <section className="projects-section" id="projects">
                         <h2>Projects</h2>
                         <div className="cards-container">
                             <ProjectCard title={"Verilog Flappy Bird"} image={img1}></ProjectCard>

@@ -30,17 +30,22 @@ header nav a{
     font-size: 1.2rem;
     transition: background-color 0.5s ease;
     transition: border-radius 0.5s ease;
-    transition: padding 0.5s ease;
+    transition: padding 0.5s ease, color 0.5s ease;
+    color: black;
     
 
 }
 
+header nav a:active{
+    color: black;
+}
+
 header nav a:hover{
     text-decoration: none;
-    color:brown;
-    background-color: white;
+    color: skyblue;
     border-radius: 10%;
     padding: 0.1rem;
+    cursor: pointer;
 
 }
 
