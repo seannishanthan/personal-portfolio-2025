@@ -1,0 +1,215 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', 'sans-serif';
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 1.5em;
+    background-color: violet;
+    height: auto;
+    
+}
+
+header .title{
+    font-size: 1.6rem;
+}
+
+header nav{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    flex-shrink: 5;
+}
+
+header nav a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: background-color 0.5s ease;
+    transition: border-radius 0.5s ease;
+    transition: padding 0.5s ease;
+    
+
+}
+
+header nav a:hover{
+    text-decoration: none;
+    color:brown;
+    background-color: white;
+    border-radius: 10%;
+    padding: 0.1rem;
+
+}
+
+.intro-container{
+    display: flex;
+    border: 1px solid black;
+    justify-content: space-around;
+    width: 100%;
+    flex-grow: 2;
+}
+
+.intro-sub-1 h2{
+    font-size: 5vh;       
+}
+
+.intro-sub-1 p{
+    font-size: 3vh;       
+}
+
+
+
+.typing-text{
+    position: relative;
+    color: blue;
+    
+}
+
+
+/* .typing-text:before{
+    content: "";
+    position: absolute;
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    border-left: 5px solid blue;
+    animation: animate 4s steps(12) infinite;
+    overflow: hidden;
+}
+
+@keyframes animate{
+    40%, 60%{
+        left: 100%;
+    }
+    100%{
+        left: 0%;
+    }
+} */
+
+.intro-sub-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.intro-sub-2{
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.pfp{
+    border-radius: 10%;
+    max-width: 40vh;
+    aspect-ratio: 1/1;
+}
+
+.link-container{
+    flex-grow: 0.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding: 1rem;
+    background-color: white;
+    border: 1px red solid;
+}
+
+.link-container a{
+    color: black;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    transition: color 0.7s ease;
+}
+
+.link-container .github-icon:hover{
+    color: grey;
+}
+
+.link-container .linkedin-icon:hover{
+    color: skyblue;
+}
+
+.experience-section{
+    border: 1px blue dashed;
+    padding: 3rem 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+
+
+}
+
+.experience-section > h2{
+    text-align: center;
+    font-size: 2.5rem;
+    color: violet;
+}  
+
+.experience-section .cards-container{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+
+}
+
+.experience-section .card{
+    border: 1px solid skyblue;
+    border-radius: 20px;
+    transition: box-shadow 0.6s ease, transform 0.6s ease;
+    
+}
+
+.experience-section .card:hover{
+    box-shadow: 3px 3px 9px rgb(187, 56, 56);
+    transform: translate(5px,5px);
+}
+
+.experience-section .card .img-container{
+    border: 4px black solid;
+    background-color: beige;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.experience-section img{
+    max-width: 100%;
+    max-height: 50vh;
+    padding: 0.3rem;
+}
+
+
+
+.experience-section .card .info{
+    display: flex;
+    justify-content: space-between;
+    border: 1px  black solid;
+    padding: 1.5rem;
+} 
+
+.experience-section .card .role-info{
+    padding: 0.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+} 
+
+.experience-section .card .date-info{
+
+} 
+
+.experience-section .card .description{
+    padding: 1.5rem;
+} 
+
+
+
