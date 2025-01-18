@@ -2,23 +2,29 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Inter', 'sans-serif';
+    font-family: 'Inter', 'sans-serif';    
+}
+
+body{
+    background: #1F2123;  
+
 }
 
 header{
     display: flex;
     justify-content: space-between;
     padding: 1em 1.5em;
-    background-color: violet;
     height: auto;
     position: fixed;
     width: 100%;
-    z-index: 1;
-    
+    z-index: 1;  
+    background: radial-gradient(circle, #1F2123, rgb(12, 12, 12));  
 }
 
 header .title{
-    font-size: 1.6rem;
+    font-size: 1.8rem;
+    color: #3FA0EF;
+    font-weight: bold;
 }
 
 header nav{
@@ -34,13 +40,13 @@ header nav a{
     transition: background-color 0.5s ease;
     transition: border-radius 0.5s ease;
     transition: padding 0.5s ease, color 0.5s ease;
-    color: black;
-    
+    color:#3FA0EF;
+    font-weight: bold;
 
 }
 
 header nav a:active{
-    color: black;
+    color: skyblue;
 }
 
 header nav a:hover{
@@ -54,59 +60,42 @@ header nav a:hover{
 
 .intro-container{
     display: flex;
-    border: 1px solid black;
     justify-content: space-around;
     width: 100%;
-    flex-grow: 2;
+    flex: 0.7;
+    height: 100px;
+    padding: 8rem 8rem;
+    margin-top: 6rem;
 }
 
 .intro-sub-1 h2{
-    font-size: 5vh;       
+    font-size: 9vh;
+    color: rgb(228, 228, 228);       
+          
 }
 
 .intro-sub-1 p{
-    font-size: 3vh;       
+    color: #0b7fec;
+    font-size: 4vh;       
 }
 
 
 
 .typing-text{
-    position: relative;
-    color: blue;
-    
+    color: #3FA0EF;
 }
 
-
-/* .typing-text:before{
-    content: "";
-    position: absolute;
-    background-color: white;
-    height: 100%;
-    width: 100%;
-    border-left: 5px solid blue;
-    animation: animate 4s steps(12) infinite;
-    overflow: hidden;
-}
-
-@keyframes animate{
-    40%, 60%{
-        left: 100%;
-    }
-    100%{
-        left: 0%;
-    }
-} */
 
 .intro-sub-1{
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 1rem;
-    padding: 1rem;
+    padding: 0rem 1rem;
 }
 
 .intro-sub-2{
-    padding: 2rem;
+    padding: 0rem 2rem;
     display: flex;
     align-items: center;
 }
@@ -114,23 +103,20 @@ header nav a:hover{
 .pfp{
     border-radius: 10%;
     width: 40vh;
-    max-width: 300px;
+    max-width: 220px;
     aspect-ratio: 1/1;
 }
 
 .link-container{
-    flex-grow: 0.5;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 3rem;
-    padding: 1rem;
-    background-color: white;
-    border: 1px red solid;
+    padding: 2rem 1rem;
 }
 
 .link-container a{
-    color: black;
+    color: #3FA0EF;
     background: transparent;
     padding: 0;
     margin: 0;
@@ -138,7 +124,7 @@ header nav a:hover{
 }
 
 .link-container .github-icon:hover{
-    color: grey;
+    color: skyblue;
 }
 
 .link-container .linkedin-icon:hover{
@@ -146,8 +132,7 @@ header nav a:hover{
 }
 
 .experience-section{
-    border: 1px blue dashed;
-    padding: 3rem 1rem;
+    padding: 1rem 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -159,34 +144,36 @@ header nav a:hover{
 
 .experience-section > h2{
     text-align: center;
-    font-size: 2.5rem;
-    color: violet;
+    font-size: 4rem;
+    color: #3FA0EF;
 }  
 
 .experience-section .cards-container{
     display: flex;
     flex-direction: column;
     gap: 5rem;
+    color: rgb(228, 228, 228);       
+
 
 }
 
 .experience-section .card{
-    border: 1px solid skyblue;
     border-radius: 20px;
     transition: box-shadow 0.6s ease, transform 0.6s ease;
     width:900px;
     max-width: 100%;
+    overflow: hidden;
+    border: 2px solid black;
     
 }
 
 .card:hover{
-    box-shadow: 3px 3px 9px rgb(187, 56, 56);
+    box-shadow: 3px 3px 9px #0b7fec;
     transform: translate(5px,5px);
 }
 
-.experience-section .card .img-container{
-    border: 4px black solid;
-    background-color: beige;
+.experience-section .card .img-container{      
+    background-color: rgb(228, 228, 228);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -203,7 +190,6 @@ header nav a:hover{
 .experience-section .card .info{
     display: flex;
     justify-content: space-between;
-    border: 1px  black solid;
     padding: 1.5rem;
 } 
 
@@ -215,16 +201,21 @@ header nav a:hover{
 } 
 
 .experience-section .card .date-info{
-
+    color: rgb(228, 228, 228);       
 } 
 
 .experience-section .card .description{
-    padding: 1.5rem;
+    padding: 0 1.5rem 1rem 2rem;
 } 
 
+.experience-section .card .description li{
+    padding: 0.1rem;
+} 
+
+
 .projects-section{
-    border: 1px blue dashed;
-    padding: 3rem 1rem;
+    margin-top: 5rem 0;
+    padding: 5rem 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -236,8 +227,8 @@ header nav a:hover{
 
 .projects-section > h2{
     text-align: center;
-    font-size: 2.5rem;
-    color: violet;
+    font-size: 4rem;
+    color: #3FA0EF;
 }  
 
 .projects-section .cards-container{
@@ -248,7 +239,7 @@ header nav a:hover{
 }
 
 .projects-section .card{
-    border: 1px solid skyblue;
+    border: 2px solid black;
     border-radius: 20px;
     transition: box-shadow 0.6s ease, transform 0.6s ease;
     width:900px;
@@ -256,7 +247,7 @@ header nav a:hover{
     height: 320px;
     display: flex;
     justify-content: space-between;
-    
+    color: rgb(228, 228, 228);       
 }
 
 .projects-section .card .info{
@@ -297,6 +288,13 @@ header nav a:hover{
     gap: 0.8rem;
     font-size: 1rem;
     padding: 1rem;
+    color: rgb(228, 228, 228);
+    background: radial-gradient(circle, #1F2123, rgb(12, 12, 12));  
+
+}
+
+.footer a{
+    color: #3FA0EF
 }
 
 .footer i{
