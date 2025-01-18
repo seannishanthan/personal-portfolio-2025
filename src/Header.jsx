@@ -8,9 +8,9 @@ function Header(){
             </div>
 
             <nav className="navbar">
-                <Link to='/' smooth={true} duration={900}>Home</Link>
-                <Link to='experience' spy={true} smooth={true} duration={900} activeClass='active'>Experience</Link>
-                <Link to='projects' smooth={true} duration={1500}>Projects</Link>
+                <Link to='home' smooth={true} duration={900} offset={-100}>Home</Link>
+                <Link to='experience' spy={true} smooth={true} duration={900} offset={-60}>Experience</Link>
+                <Link to='projects' smooth={true} duration={1500} offset={-10}>Projects</Link>
 
             </nav>
         </header>
