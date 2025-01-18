@@ -17,7 +17,11 @@ function ExperienceCard(props){
                 </div>
             </div>
             
-            <p className="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio dolor molestias libero, dolore, doloremque quo, perferendis nostrum maxime aliquid laboriosam atque labore rem laudantium nulla ut ad perspiciatis asperiores assumenda.</p>
+            {/* <p className="description">{props.description}</p> */}
+
+            <ul className="description">
+                {props.description.map((listItem, i) => (<li key={i}>{listItem}</li>))}
+            </ul>
         </div>
     )
 }
@@ -27,6 +31,7 @@ ExperienceCard.PropTypes = {
     role: PropTypes.string,
     org: PropTypes.string,
     date: PropTypes.string,
+    description: PropTypes.array,
 }
 
 ExperienceCard.defaultProps = {
@@ -34,6 +39,7 @@ ExperienceCard.defaultProps = {
     role: "Role",
     org: "Organization",
     date: "Jan. 2024 - Apr. 2024",
+    description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi adipisci non eaque incidunt quia illum rem porro voluptatem in provident cupiditate voluptas repellendus atque et est architecto praesentium, magnam nihil!"
 }
 
 export default ExperienceCard

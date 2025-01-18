@@ -11,6 +11,9 @@ header{
     padding: 1em 1.5em;
     background-color: violet;
     height: auto;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
     
 }
 
